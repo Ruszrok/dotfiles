@@ -1,1 +1,4 @@
 alias keepass="mono ~/bin/KeePass/KeePass.exe"
+
+alias la="ls -la"
+alias lt="tree"
