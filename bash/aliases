@@ -2,5 +2,6 @@ alias keepass="\"/cygdrive/c/Program Files (x86)/KeePass Password Safe 2/KeePass
 alias dwn="cd \"/cygdrive/c/Users/$USER/Downloads\""
 alias drp="cd \"/cygdrive/c/Users/$USER/Dropbox\""
 
+alias ls="ls --color"
 alias la="ls -la"
 alias lt="tree"
