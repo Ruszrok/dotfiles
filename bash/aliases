@@ -1,4 +1,6 @@
 alias keepass="mono ~/bin/KeePass/KeePass.exe"
+alias dwn="cd ~/downloads"
+alias drp="cd ~/Dropbox"
 
 alias la="ls -la"
 alias lt="tree"
