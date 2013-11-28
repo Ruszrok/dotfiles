@@ -3,3 +3,5 @@
 	name = Femel
 [core]
 	editor = vim
+[diff]
+	tool = vimdiff
