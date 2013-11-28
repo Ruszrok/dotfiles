@@ -1,6 +1,7 @@
 alias keepass="\"/cygdrive/c/Program Files (x86)/KeePass Password Safe 2/KeePass.exe\""
 alias dwn="cd \"/cygdrive/c/Users/$USER/Downloads\""
 alias drp="cd \"/cygdrive/c/Users/$USER/Dropbox\""
+alias iis="/cygdrive/c/Windows/System32/inetsrv/InetMgr.exe"
 
 alias ls="ls --color"
 alias la="ls -la"
