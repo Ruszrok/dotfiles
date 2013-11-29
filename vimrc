@@ -1,5 +1,4 @@
-:hi MatchParen cterm=bold ctermbg=none ctermfg=none 
-:let mapleader = ","
+let mapleader = ","
 
 set nocompatible              " be iMproved
 filetype off                  " required!
@@ -9,9 +8,19 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
-Bundle 'klen/python-mode.git'
+Bundle 'hdima/python-syntax.git'
+Bundle 'altercation/vim-colors-solarized.git'
 
 filetype plugin indent on     " required!
+
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+colorscheme solarized
+set number
+
+let python_highlight_all = 1
 
 " indentation
 set smartindent
@@ -22,5 +31,3 @@ set expandtab
 " search
 set incsearch
 set hlsearch
-
-set number
