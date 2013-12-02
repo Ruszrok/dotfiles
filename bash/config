@@ -1,0 +1,3 @@
+dot=$HOME"/bin/dotfiles/"
+dev="/cygdrive/c/EPiServer"
+main="/cygdrive/c/EPiServer-main"
