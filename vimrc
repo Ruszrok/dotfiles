@@ -22,11 +22,13 @@ set number
 
 let python_highlight_all = 1
 
-" indentation
+" indentation all
 set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+" identation make
+autocmd FileType make setlocal noexpandtab
 
 " search
 set incsearch
