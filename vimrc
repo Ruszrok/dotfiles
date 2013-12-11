@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'hdima/python-syntax.git'
 Bundle 'altercation/vim-colors-solarized.git'
+Bundle 'PProvost/vim-ps1'
 
 filetype plugin indent on     " required!
 
