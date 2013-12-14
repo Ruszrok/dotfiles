@@ -33,3 +33,7 @@ autocmd FileType make setlocal noexpandtab
 " search
 set incsearch
 set hlsearch
+
+" ESC binding
+inoremap jk <esc>
+inoremap kj <esc>
