@@ -32,3 +32,7 @@ set expandtab
 " search
 set incsearch
 set hlsearch
+
+" ESC binding
+inoremap jk <esc>
+inoremap kj <esc>
