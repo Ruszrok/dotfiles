@@ -27,6 +27,7 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
 " identation make
 autocmd FileType make setlocal noexpandtab
 
