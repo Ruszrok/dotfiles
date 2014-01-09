@@ -35,6 +35,10 @@ autocmd FileType make setlocal noexpandtab
 set incsearch
 set hlsearch
 
+" multifile search
+nnoremap <F7> :grep <C-R><C-W> *<CR><CR>
+nnoremap <F3> :cnext <CR>
+
 " ESC binding
 inoremap jk <esc>
 inoremap kj <esc>
