@@ -34,8 +34,8 @@ set incsearch
 set hlsearch
 
 " multifile Search
-nnoremap <F7> :grep <C-R><C-W> *<CR><CR>
-nnoremap <F3> :cnext <CR>ESC binding
+nnoremap <F7> :grep <C-R><C-W> *<CR><CR><CR>
+nnoremap <F3> :cnext <CR>
 
 " ESC binding
 inoremap jk <esc>
