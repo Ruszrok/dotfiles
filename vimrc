@@ -33,6 +33,10 @@ set expandtab
 set incsearch
 set hlsearch
 
+" multifile Search
+nnoremap <F7> :grep <C-R><C-W> *<CR><CR>
+nnoremap <F3> :cnext <CR>ESC binding
+
 " ESC binding
 inoremap jk <esc>
 inoremap kj <esc>
