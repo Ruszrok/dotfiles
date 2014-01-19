@@ -28,8 +28,11 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" identation make
+" file types 
+" make
 autocmd FileType make setlocal noexpandtab
+" javascript
+autocmd FileType javascript setlocal tabstop=8 shiftwidth=8
 
 " search
 set incsearch
