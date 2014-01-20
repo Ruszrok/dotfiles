@@ -29,6 +29,12 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" file types 
+" make
+autocmd FileType make setlocal noexpandtab
+" javascript
+autocmd FileType javascript setlocal tabstop=8 shiftwidth=8
+
 " search
 set incsearch
 set hlsearch
@@ -40,3 +46,6 @@ nnoremap <F3> :cnext <CR>
 " ESC binding
 inoremap jk <esc>
 inoremap kj <esc>
+
+" BS fix
+set  backspace=2
