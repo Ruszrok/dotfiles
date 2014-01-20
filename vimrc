@@ -45,3 +45,6 @@ nnoremap <F3> :cnext <CR>
 " ESC binding
 inoremap jk <esc>
 inoremap kj <esc>
+
+" BS fix
+set backspace=2
