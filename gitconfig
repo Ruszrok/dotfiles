@@ -4,3 +4,6 @@
 	editor = vim
 [diff]
 	tool = vimdiff
+[color]
+    ui = true
+
