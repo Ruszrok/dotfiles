@@ -7,7 +7,6 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'kien/ctrlp.vim'
 Bundle 'hdima/python-syntax.git'
 Bundle 'altercation/vim-colors-solarized.git'
 
