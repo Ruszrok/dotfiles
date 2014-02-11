@@ -1,6 +1,5 @@
 alias keepass="mono ~/bin/KeePass/KeePass.exe"
 alias dwn="cd ~/downloads"
-alias drp="cd ~/Dropbox"
 
 alias ls="ls --color"
 alias la="ls -la"
