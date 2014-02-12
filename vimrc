@@ -8,15 +8,12 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'hdima/python-syntax.git'
-Bundle 'altercation/vim-colors-solarized.git'
 
 filetype plugin indent on     " required!
 
 syntax enable
 set background=dark
-"let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-colorscheme solarized
+colorscheme default 
 set number
 
 let python_highlight_all = 1
