@@ -38,10 +38,19 @@ nnoremap <F7> :grep <C-R><C-W> *<CR><CR><CR>
 nnoremap <F3> :cnext <CR>
 
 " quotes shortcuts
-nnoremap "" F<space>a"<C-[>t<space>a"<C-[>
-nnoremap '' F<space>a'<C-[>t<space>a'<C-[>
+nnoremap "" F<space>a"<Esc>t<space>a"<Esc>
+nnoremap '' F<space>a'<Esc>t<space>a'<Esc>
 nnoremap d" T"vt"d
 nnoremap d' T'vt'd
+nnoremap d( T(vt)d
+nnoremap d) T(vt)d
+
+" trailing semicolons
+nnoremap ;; $a;<Esc>
+inoremap ;; <Esc>$a;<Esc>
+
+" space selection
+nnoremap <space> /{<CR>Nv%
 
 " Backspace fix
 set  backspace=2
