@@ -31,7 +31,6 @@ autocmd FileType javascript setlocal tabstop=8 shiftwidth=8
 
 " search
 set incsearch
-set hlsearch
 
 " multifile Search
 nnoremap <F7> :grep <C-R><C-W> *<CR><CR><CR>
