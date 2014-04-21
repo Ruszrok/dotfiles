@@ -12,7 +12,6 @@ Bundle 'hdima/python-syntax.git'
 filetype plugin indent on     " required!
 
 syntax enable
-set background=dark
 colorscheme default 
 set number
 
