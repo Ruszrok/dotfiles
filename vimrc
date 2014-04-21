@@ -26,8 +26,6 @@ set expandtab
 " file types 
 " make
 autocmd FileType make setlocal noexpandtab
-" javascript
-autocmd FileType javascript setlocal tabstop=8 shiftwidth=8
 
 " search
 set incsearch
