@@ -50,5 +50,9 @@ inoremap ;; <Esc>$a;<Esc>
 " space selection
 nnoremap <space> /{<CR>Nv%
 
+" ctrl+s as save
+inoremap <C-s> <Esc>:w<CR>
+nnoremap <C-s> :w<CR>
+
 " Backspace fix
 set  backspace=2
