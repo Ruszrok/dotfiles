@@ -1,9 +1,0 @@
-[user]
-	name = Femel
-[core]
-	editor = vim
-[diff]
-	tool = vimdiff
-[color]
-    ui = true
-
