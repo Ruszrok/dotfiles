@@ -11,3 +11,5 @@ In ~/.gitconfig add:
      email = myemail@host.com
 [include]
      path = bin/dotfiles/gitconfig
+     
+Follow the instructions here https://github.com/gmarik/Vundle.vim to install vim packages
