@@ -1,21 +1,11 @@
 let mapleader = ","
 
-set nocompatible              " be iMproved
-filetype off                  " required!
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
-Bundle 'hdima/python-syntax.git'
-
-filetype plugin indent on     " required!
-
 syntax enable
-colorscheme default 
-set number
+filetype on
+filetype plugin indent on
 
-let python_highlight_all = 1
+colorscheme desert
+set number
 
 " indentation all
 set smartindent
@@ -26,15 +16,10 @@ set expandtab
 " file types 
 " make
 autocmd FileType make setlocal noexpandtab
-" javascript
-autocmd FileType javascript setlocal tabstop=8 shiftwidth=8
 
 " search
 set incsearch
-
-" multifile search
-nnoremap <F7> :grep <C-R><C-W> *<CR><CR>
-nnoremap <F3> :cnext <CR>
+set ignorecase
 
 " quotes shortcuts
 nnoremap "" Bi"<Esc>Ea"<Esc>
@@ -48,8 +33,14 @@ nnoremap d) T(vt)d
 nnoremap ;; $a;<Esc>
 inoremap ;; <Esc>$a;<Esc>
 
+" ctrl + s for saving
+inoremap <C-s> <Esc>:w<CR>
+nnoremap <C-s> :w<CR>
+
 " space selection
 nnoremap <space> /{<CR>Nv%
 
-" Backspace fix
-set backspace=2
+if has("gui_running") 
+    set lines=9999 columns=9999 
+    set guifont=Lucida_Console:h12:cDEFAULT
+endif
