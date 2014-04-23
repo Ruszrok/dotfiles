@@ -1,6 +1,4 @@
-alias keepass="mono ~/bin/KeePass/KeePass.exe"
 alias dwn="cd $dwn"
-alias gd="cd \"$gd\""
 
 alias ls="ls --color"
 alias la="ls -la"
