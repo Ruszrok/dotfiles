@@ -1,5 +1,3 @@
-let mapleader = ","
-
 set nocompatible              " be iMproved
 filetype off                  " required!
 
