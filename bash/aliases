@@ -1,3 +1,5 @@
+alias cls="clear"
+alias clr="clear"
 alias dwn="cd $dwn"
 
 alias ls="ls --color"
