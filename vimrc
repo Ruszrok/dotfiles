@@ -10,7 +10,7 @@ Bundle 'hdima/python-syntax.git'
 filetype plugin indent on     " required!
 
 syntax enable
-colorscheme default 
+colorscheme zellner 
 set number
 
 let python_highlight_all = 1
@@ -24,8 +24,6 @@ set expandtab
 " file types 
 " make
 autocmd FileType make setlocal noexpandtab
-" javascript
-autocmd FileType javascript setlocal tabstop=8 shiftwidth=8
 
 " search
 set incsearch
@@ -48,6 +46,10 @@ inoremap ;; <Esc>$a;<Esc>
 
 " space selection
 nnoremap <space> /{<CR>Nv%
+
+" ctrl+s as save
+inoremap <C-s> <Esc>:w<CR>
+nnoremap <C-s> :w<CR>
 
 " Backspace fix
 set backspace=2
