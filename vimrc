@@ -51,5 +51,9 @@ nnoremap <space> /{<CR>Nv%
 inoremap <C-s> <Esc>:w<CR>
 nnoremap <C-s> :w<CR>
 
+" tabs movement
+nnoremap ty gt
+nnoremap yt gT
+
 " Backspace fix
 set backspace=2
