@@ -6,6 +6,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'hdima/python-syntax.git'
+Bundle 'groenewege/vim-less'
 
 filetype plugin indent on     " required!
 
