@@ -42,5 +42,5 @@ nnoremap <space> /{<CR>Nv%
 
 if has("gui_running") 
     set lines=9999 columns=9999 
-    set guifont=Lucida_Console:h12:cDEFAULT
+    set guifont=Consolas:h15:cDEFAULT
 endif
