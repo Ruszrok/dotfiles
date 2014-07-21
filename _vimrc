@@ -1,5 +1,3 @@
-let mapleader = ","
-
 syntax enable
 filetype on
 filetype plugin indent on
@@ -14,8 +12,7 @@ set shiftwidth=4
 set expandtab
 
 " file types 
-" make
-autocmd FileType make setlocal noexpandtab
+autocmd FileType make setlocal noexpandtab "make
 
 " search
 set incsearch
@@ -29,16 +26,18 @@ nnoremap d' T'vt'd
 nnoremap d( T(vt)d
 nnoremap d) T(vt)d
 
-" trailing semicolons
-nnoremap ;; $a;<Esc>
-inoremap ;; <Esc>$a;<Esc>
-
 " ctrl + s for saving
 inoremap <C-s> <Esc>:w<CR>
 nnoremap <C-s> :w<CR>
 
-" space selection
-nnoremap <space> /{<CR>Nv%
+"managing windows
+nnoremap <C-h> <C-w><Left>
+nnoremap <C-j> <C-w><Down>
+nnoremap <C-k> <C-w><Up>
+nnoremap <C-l> <C-w><Right>
+
+" Backspace fix
+set backspace=indent,eol,start
 
 if has("gui_running") 
     set lines=9999 columns=9999 
