@@ -23,8 +23,7 @@ set shiftwidth=4
 set expandtab
 
 " file types 
-" make
-autocmd FileType make setlocal noexpandtab
+autocmd FileType make setlocal noexpandtab "make
 
 " search
 set incsearch
@@ -41,16 +40,9 @@ nnoremap d' T'vt'd
 nnoremap d( T(vt)d
 nnoremap d) T(vt)d
 
-" trailing semicolons
-nnoremap ;; $a;<Esc>
-inoremap ;; <Esc>$a;<Esc>
-
-" space selection
-nnoremap <space> /{<CR>Nv%
-
 " ctrl+s as save
 inoremap <C-s> <Esc>:w<CR>
 nnoremap <C-s> :w<CR>
 
 " Backspace fix
-set backspace=2
+set backspace=indent,eol,start
