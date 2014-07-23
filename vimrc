@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved
-filetype off                  " required!
 
+" Vundle
+filetype off                  " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 Plugin 'gmarik/vundle'
@@ -32,14 +33,6 @@ set incsearch
 " multifile search
 nnoremap <F7> :grep <C-R><C-W> *<CR><CR>
 nnoremap <F3> :cnext <CR>
-
-" quotes shortcuts
-nnoremap "" Bi"<Esc>Ea"<Esc>
-nnoremap '' Bi'<Esc>Ea'<Esc>
-nnoremap d" T"vt"d
-nnoremap d' T'vt'd
-nnoremap d( T(vt)d
-nnoremap d) T(vt)d
 
 " ctrl+s as save
 inoremap <C-s> <Esc>:w<CR>
