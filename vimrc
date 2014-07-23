@@ -2,19 +2,20 @@ set nocompatible              " be iMproved
 filetype off                  " required!
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
-Bundle 'hdima/python-syntax.git'
-Bundle 'groenewege/vim-less'
-
+call vundle#begin()
+Plugin 'gmarik/vundle'
+Plugin 'groenewege/vim-less'
+Plugin 'bling/vim-airline'
+Plugin 'tomasr/molokai'
+call vundle#end()
 filetype plugin indent on     " required!
 
 syntax enable
-colorscheme zellner 
-set number
 
-let python_highlight_all = 1
+set t_Co=256
+colorscheme molokai
+
+set number
 
 " indentation all
 set smartindent
@@ -52,3 +53,11 @@ nnoremap <C-l> <C-w><Right>
 
 " Backspace fix
 set backspace=indent,eol,start
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
+let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
+let g:airline_detect_modified = 0
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+set laststatus=2
