@@ -45,11 +45,17 @@ nnoremap d) T(vt)d
 inoremap <C-s> <Esc>:w<CR>
 nnoremap <C-s> :w<CR>
 
-"managing windows
+" windows
 nnoremap <C-h> <C-w><Left>
 nnoremap <C-j> <C-w><Down>
 nnoremap <C-k> <C-w><Up>
 nnoremap <C-l> <C-w><Right>
+
+" buffers
+nnoremap <Space>h :bprevious<CR>
+nnoremap <Space>j :bprevious<CR>
+nnoremap <Space>l :bnext<CR>
+nnoremap <Space>k :bnext<CR>
 
 " Backspace fix
 set backspace=indent,eol,start
