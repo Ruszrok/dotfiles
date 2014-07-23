@@ -53,6 +53,14 @@ nnoremap <Space>k :bnext<CR>
 " Backspace fix
 set backspace=indent,eol,start
 
+" quotes shortcuts
+nnoremap "" Bi"<Esc>Ea"<Esc>
+nnoremap '' Bi'<Esc>Ea'<Esc>
+nnoremap d" T"dt"
+nnoremap d' T'dt'
+nnoremap d( T(dt)
+nnoremap d) T(dt)
+
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
