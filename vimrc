@@ -11,11 +11,13 @@ Plugin 'tomasr/molokai'
 call vundle#end()
 filetype plugin indent on     " required!
 
-syntax enable
+" Keymap
+set keymap=russian-jcuken
 
+" Appearance
+syntax enable
 set t_Co=256
 colorscheme molokai
-
 set number
 
 " indentation all
