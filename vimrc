@@ -12,7 +12,7 @@ call vundle#end()
 filetype plugin indent on     " required!
 
 " Keymap
-set keymap=russian-jcuken
+set keymap=russian-jcukenwin
 
 " Appearance
 syntax enable
