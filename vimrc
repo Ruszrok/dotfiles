@@ -13,6 +13,8 @@ filetype plugin indent on     " required!
 
 " Keymap
 set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=-1
 
 " Appearance
 syntax enable
@@ -51,6 +53,7 @@ nnoremap <Space>h :bprevious<CR>
 nnoremap <Space>j :bprevious<CR>
 nnoremap <Space>l :bnext<CR>
 nnoremap <Space>k :bnext<CR>
+nnoremap <C-w> :bd<CR>:vsplit<CR>
 
 " Backspace fix
 set backspace=indent,eol,start
