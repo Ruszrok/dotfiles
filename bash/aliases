@@ -4,6 +4,7 @@ alias clr="clear"
 alias dwn="cd $dwn"
 alias dot="cd $dot"
 alias site="cd $site"
+alias acc="cd $acc"
 
 alias gst="git status"
 

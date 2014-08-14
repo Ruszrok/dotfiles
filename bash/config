@@ -1,3 +1,4 @@
 dot=$HOME/bin/dotfiles
 dwn=$HOME/Downloads
 site=$HOME/bin/site
+acc=$HOME/bin/acceleratedcpp
