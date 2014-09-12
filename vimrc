@@ -66,6 +66,10 @@ nnoremap d' T'dt'
 nnoremap d( T(dt)
 nnoremap d) T(dt)
 
+" newline without insert mode
+nnoremap <S-Enter> O<Esc>j
+nnoremap <CR> o<Esc>k
+
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
