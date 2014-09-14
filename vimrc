@@ -76,3 +76,24 @@ let g:airline_detect_modified = 0
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 set laststatus=2
+
+" Functions
+function! IsCurrentBufferEmpty()
+    return line2byte(line("$") + 1) <= 2
+endfunction
+function! CppModule(name)
+    let headerName = a:name . ".h"
+    execute 'tabedit ' . headerName
+    if IsCurrentBufferEmpty()        
+        let guardName = a:name . "_h"
+        call append(0, "#ifndef GUARD_" . guardName)
+        call append(1, "#define GUARD_" . guardName)
+        call append(3, "#endif")
+    endif
+    execute 'vsplit ' . a:name . ".cpp"
+    if IsCurrentBufferEmpty()
+        call append(0, "#include \"" . headerName . "\"")
+    endif
+endfunction
+
+command! -nargs=1 Cppm :call CppModule(<f-args>)
