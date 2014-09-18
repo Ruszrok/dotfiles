@@ -78,10 +78,11 @@ let g:airline_right_sep = '◀'
 set laststatus=2
 
 " Functions
-function! IsCurrentBufferEmpty()
+fu! IsCurrentBufferEmpty()
     return line2byte(line("$") + 1) <= 2
-endfunction
-function! CppModule(name)
+endfu
+
+fu! CppModule(name)
     let headerName = a:name . ".h"
     execute 'tabedit ' . headerName
     if IsCurrentBufferEmpty()        
@@ -94,6 +95,10 @@ function! CppModule(name)
     if IsCurrentBufferEmpty()
         call append(0, "#include \"" . headerName . "\"")
     endif
-endfunction
+endfu
 
-command! -complete=file -nargs=1 Cppm :call CppModule(<f-args>)
+fu !ModuleComplete(A, L, P)
+    return system("ls *.h | cut -d. -f1")
+endfu
+
+com! -complete=custom,ModuleComplete -nargs=1 Cppm :call CppModule(<f-args>)
