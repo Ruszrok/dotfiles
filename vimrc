@@ -69,6 +69,9 @@ nnoremap d) T(dt)
 nnoremap <S-Enter> O<Esc>j
 nnoremap <CR> o<Esc>k
 
+" Ctrl + Space as Ctrl + P
+inoremap <C-Space> <C-p>
+
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
