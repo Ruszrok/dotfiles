@@ -72,6 +72,9 @@ nnoremap <CR> o<Esc>k
 " Ctrl + Space as Ctrl + P
 inoremap <C-Space> <C-p>
 
+" Build
+inoremap <C-B> :!make<CR>
+nnoremap <C-B> :!make<CR>
 " Run
 inoremap <C-F5> :!make run<CR>
 inoremap <C-F5> :!make run<CR>
