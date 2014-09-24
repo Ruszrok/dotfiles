@@ -97,7 +97,7 @@ fu! CppModule(name)
     endif
 endfu
 
-fu !ModuleComplete(A, L, P)
+fu! ModuleComplete(A, L, P)
     return system("ls *.h | cut -d. -f1")
 endfu
 
