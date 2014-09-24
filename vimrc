@@ -72,6 +72,13 @@ nnoremap <CR> o<Esc>k
 " Ctrl + Space as Ctrl + P
 inoremap <C-Space> <C-p>
 
+" Run
+inoremap <C-F5> :!make run<CR>
+inoremap <C-F5> :!make run<CR>
+" Debug
+nnoremap <F5> :!make debug<CR>
+nnoremap <F5> :!make debug<CR>
+
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
