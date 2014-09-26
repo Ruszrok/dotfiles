@@ -1,10 +1,9 @@
 [user]
-    email=eskurihin@gmail.com
-	name=EugeneSqr
+    name=EugeneSqr
 [core]
-	editor=vim
+    editor=vim
 [diff]
-	tool=vimdiff
+    tool=vimdiff
 [color]
     ui=true
 
