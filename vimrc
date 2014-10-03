@@ -73,14 +73,11 @@ nnoremap <CR> o<Esc>k
 inoremap <C-Space> <C-p>
 
 " Build
-inoremap <C-B> :!make<CR>
-nnoremap <C-B> :!make<CR>
+nnoremap \b :!make<CR>
 " Run
-inoremap <C-F5> :!make run<CR>
-inoremap <C-F5> :!make run<CR>
+nnoremap \r :!make run<CR>
 " Debug
-nnoremap <F5> :!make debug<CR>
-nnoremap <F5> :!make debug<CR>
+nnoremap \d :!make debug<CR>
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
