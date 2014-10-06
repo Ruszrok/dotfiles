@@ -112,3 +112,23 @@ fu! ModuleComplete(A, L, P)
 endfu
 
 com! -complete=custom,ModuleComplete -nargs=1 Cppm :call CppModule(<f-args>)
+
+fu! CppMake()
+    if IsCurrentBufferEmpty()        
+        call append(0, "CXXFLAGS=-std=c++11 -Wall -g")
+        call append(2, "default: main")
+        call append(3, "")
+        call append(4, "run: main exec clean")
+        call append(5, "")
+        call append(6, "exec:")
+        call append(7, "\t ./main < input.txt")
+        call append(8, "")
+        call append(9, "dbg:")
+        call append(10, "\t gdb ./main")
+        call append(11, "")
+        call append(12, "clean")
+        call append(13, "\t rm -f main")
+    endif
+endfu
+
+com! CppMake :call CppMake()
