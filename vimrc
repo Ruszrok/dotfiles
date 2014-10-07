@@ -126,7 +126,7 @@ fu! CppMake()
         call append(9, "dbg:")
         call append(10, "\t gdb ./main")
         call append(11, "")
-        call append(12, "clean")
+        call append(12, "clean:")
         call append(13, "\t rm -f main")
     endif
 endfu
