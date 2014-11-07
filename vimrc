@@ -79,6 +79,9 @@ nnoremap \r :!make run<CR>
 " Debug
 nnoremap \d :!make debug<CR>
 
+" File Browser
+nnoremap <C-p> :edit .<CR>
+
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
