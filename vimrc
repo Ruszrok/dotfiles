@@ -47,6 +47,8 @@ nnoremap <C-h> <C-w><Left>
 nnoremap <C-j> <C-w><Down>
 nnoremap <C-k> <C-w><Up>
 nnoremap <C-l> <C-w><Right>
+" remove current buffer without closing window
+nnoremap <C-c> :bp\|bd #<CR>
 
 " buffers
 nnoremap <Space>h :bprevious<CR>
