@@ -69,7 +69,7 @@ nnoremap d) T(dt)
 
 " newline without insert mode
 nnoremap <S-Enter> O<Esc>j
-nnoremap <CR> o<Esc>k
+nnoremap <CR> a<CR><Esc>k$
 
 " Ctrl + Space as Ctrl + P
 inoremap <C-Space> <C-p>
