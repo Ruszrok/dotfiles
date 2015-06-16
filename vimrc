@@ -32,7 +32,7 @@ set incsearch
 nnoremap <F7> :grep <C-R><C-W> *<CR><CR>
 nnoremap <F3> :cnext <CR>
 " ctrlp default directory
-let g:ctrlp_working_path_mode = "c"
+let g:ctrlp_working_path_mode = ""
 " ctrl+s as save
 inoremap <C-s> <Esc>:w<CR>
 nnoremap <C-s> :w<CR>
