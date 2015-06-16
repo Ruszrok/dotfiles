@@ -7,6 +7,7 @@ Plugin 'gmarik/vundle'
 Plugin 'groenewege/vim-less'
 Plugin 'bling/vim-airline'
 Plugin 'tomasr/molokai'
+Plugin 'kien/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on     " required!
 " Keymap
