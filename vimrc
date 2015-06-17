@@ -7,7 +7,7 @@ Plugin 'gmarik/vundle'
 Plugin 'groenewege/vim-less'
 Plugin 'bling/vim-airline'
 Plugin 'tomasr/molokai'
-Plugin 'kien/ctrlp.vim'
+Plugin 'Shougo/unite.vim'
 call vundle#end()
 filetype plugin indent on     " required!
 " Keymap
@@ -31,8 +31,6 @@ set incsearch
 " multifile search
 nnoremap <F7> :grep <C-R><C-W> *<CR><CR>
 nnoremap <F3> :cnext <CR>
-" ctrlp default directory
-let g:ctrlp_working_path_mode = ""
 " ctrl+s as save
 inoremap <C-s> <Esc>:w<CR>
 nnoremap <C-s> :w<CR>
@@ -64,16 +62,14 @@ nnoremap <CR> a<CR><Esc>k$
 set foldmethod=syntax
 set foldlevelstart=1
 let xml_syntax_folding=1
-" Ctrl + Space as Ctrl + P
-inoremap <C-Space> <C-p>
 " Build
 nnoremap \b :!make<CR>
 " Run
 nnoremap \r :!make run<CR>
 " Debug
 nnoremap \d :!make debug<CR>
-" File Browser
-nnoremap <C-p> :edit .<CR>
+" File Browser with Unite
+nnoremap <C-p> :Unite file<CR>
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
