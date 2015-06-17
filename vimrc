@@ -67,7 +67,7 @@ nnoremap \r :!make run<CR>
 nnoremap \d :!make debug<CR>
 " Unite
 nnoremap <leader>t :Unite -start-insert file_rec<CR>
-nnoremap <leader>f :Unite -start-insert file<CR>
+nnoremap <leader>f :Unite file<CR>
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
