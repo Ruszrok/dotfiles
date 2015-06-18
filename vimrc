@@ -9,6 +9,7 @@ Plugin 'bling/vim-airline'
 Plugin 'tomasr/molokai'
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/neomru.vim'
+Plugin 'Shougo/vimproc.vim'
 call vundle#end()
 filetype plugin indent on     " required!
 " Keymap
@@ -67,7 +68,7 @@ nnoremap \r :!make run<CR>
 " Debug
 nnoremap \d :!make debug<CR>
 " Unite
-nnoremap <leader>t :Unite -start-insert file_rec<CR>
+nnoremap <leader>t :Unite -start-insert file_rec/async<CR>
 nnoremap <leader>f :Unite file<CR>
 nnoremap <leader>r :Unite file_mru<CR>
 " Airline
