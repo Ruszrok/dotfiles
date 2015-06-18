@@ -8,6 +8,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'bling/vim-airline'
 Plugin 'tomasr/molokai'
 Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/neomru.vim'
 call vundle#end()
 filetype plugin indent on     " required!
 " Keymap
@@ -68,6 +69,7 @@ nnoremap \d :!make debug<CR>
 " Unite
 nnoremap <leader>t :Unite -start-insert file_rec<CR>
 nnoremap <leader>f :Unite file<CR>
+nnoremap <leader>r :Unite file_mru<CR>
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
