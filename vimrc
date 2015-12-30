@@ -53,8 +53,13 @@ nnoremap "" Bi"<Esc>Ea"<Esc>
 nnoremap '' Bi'<Esc>Ea'<Esc>
 nnoremap d" T"dt"
 nnoremap d' T'dt'
+nnoremap y" T"yt"
+nnoremap y' T'yt'
+" parenthesis shortcuts
 nnoremap d( T(dt)
 nnoremap d) T(dt)
+nnoremap y( T(yt)
+nnoremap y) T(yt)
 " newline without insert mode
 nnoremap <S-Enter> O<Esc>j
 nnoremap <CR> a<CR><Esc>k$
