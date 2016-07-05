@@ -65,7 +65,7 @@ nnoremap y) T(yt)
 nnoremap <S-Enter> O<Esc>j
 nnoremap <CR> a<CR><Esc>k$
 " folding
-set foldmethod=syntax
+set foldmethod=manual
 set foldlevelstart=1
 let xml_syntax_folding=1
 " Build
