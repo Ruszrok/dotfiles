@@ -48,6 +48,15 @@ progress "source bashrc"
 append-line ~/.bashrc ". ~/bin/dotfiles/bashrc"
 pass "source bashrc"
 
+progress "setting up vundle\n"
+if [ ! -d ~/.vim/bundle ]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim +PluginInstall +qall
+else
+    progress "already set up"
+fi
+pass "setting up vundle"
+
 echo -n "Enter github email: "
 read github_email
 progress "adding .gitconfig"
