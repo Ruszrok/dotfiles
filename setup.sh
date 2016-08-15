@@ -48,8 +48,9 @@ progress "source bashrc"
 append-line ~/.bashrc ". ~/bin/dotfiles/bashrc"
 pass "source bashrc"
 
-progress "setting up vundle\n"
+progress "setting up vundle (missing color scheme is ok)"
 if [ ! -d ~/.vim/bundle ]; then
+    echo -en "\n"
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     vim +PluginInstall +qall
 else
@@ -57,11 +58,11 @@ else
 fi
 pass "setting up vundle"
 
-echo -n "Enter github email: "
-read github_email
 progress "adding .gitconfig"
 gitconfig=~/.gitconfig
 if [ ! -f $gitconfig ]; then
+    echo -n "Enter github email: "
+    read github_email
     touch $gitconfig
     echo "[User]" >> $gitconfig
     echo "    email = $github_email" >> $gitconfig
