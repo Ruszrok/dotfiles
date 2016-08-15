@@ -58,6 +58,23 @@ else
 fi
 pass "setting up vundle"
 
+progress "setting up vifm"
+if [ ! -d ~/.vifm ]; then
+    progress "creating ~/.vifm"
+    mkdir ~/.vifm
+fi
+append-line ~/.vifm/vifmrc ":so ~/bin/dotfiles/vifmrc"
+progress "color scheme molokai"
+if [ ! -d ~/.vifm/colors ]; then
+    progress "creating ~/.vifm/colors"
+    mkdir ~/.vifm/colors
+fi
+if [ -f ~/.vifm/colors/molokai.vifm ]; then
+    rm ~/.vifm/colors/molokai.vifm
+fi
+ln -s ~/bin/dotfiles/vifm/colors/molokai.vifm ~/.vifm/colors/molokai.vifm 
+pass "setting up vifm"
+
 progress "adding .gitconfig"
 gitconfig=~/.gitconfig
 if [ ! -f $gitconfig ]; then

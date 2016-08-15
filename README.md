@@ -2,9 +2,11 @@ dotfiles
 ========
 
 ##Prerequisites
+Install all of these using your OS's package manager
 
 * git
 * vim
+* vifm
 
 ##Setting up the environment
 Run setup.sh
