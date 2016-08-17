@@ -1,4 +1,4 @@
-colorscheme molokai
+colorscheme molokai.vifm
 
 " copy files to the opposite pane
 nmap yy :!cp %f %D<cr>
