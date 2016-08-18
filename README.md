@@ -51,4 +51,4 @@ add the following line
 
 
 * In linux mint, ubuntu add the command to startup apps via GUI
-mount ./yandex.disk
+mount /home/<username>/yandex.disk
