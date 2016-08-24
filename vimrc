@@ -35,18 +35,14 @@ set incsearch
 " ctrl+s as save
 inoremap <C-s> <Esc>:w<CR>
 nnoremap <C-s> :w<CR>
-" windows
-nnoremap <C-h> <C-w><Left>
-nnoremap <C-j> <C-w><Down>
-nnoremap <C-k> <C-w><Up>
-nnoremap <C-l> <C-w><Right>
 " remove current buffer without closing window
 nnoremap <C-c> :bp\|bd #<CR>
 " buffers
-nnoremap <Space>h :bprevious<CR>
-nnoremap <Space>j :bprevious<CR>
-nnoremap <Space>l :bnext<CR>
-nnoremap <Space>k :bnext<CR>
+nnoremap <C-h> :bprevious<CR>
+nnoremap <C-j> :bprevious<CR>
+nnoremap <C-l> :bnext<CR>
+nnoremap <C-k> :bnext<CR>
+nnoremap <C-n> :buffers<CR>:buffer<Space>
 " Backspace fix
 set backspace=indent,eol,start
 " quotes shortcuts
