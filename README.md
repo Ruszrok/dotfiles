@@ -52,3 +52,7 @@ add the following line
 
 * In linux mint, ubuntu add the command to startup apps via GUI
 mount /home/<username>/yandex.disk
+
+12. Don't forget to setup backup routine as files deleted from mounted drive can't be restored
+sudo crontab -e
+@reboot bash /home/<username>/bin/dotfiles/backup.sh
