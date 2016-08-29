@@ -40,5 +40,3 @@ macro index gs "<change-folder>=[Gmail]/Sent%20Mail<enter>" "Go to sent mail"
 macro index gt "<change-folder>=[Gmail]/Trash<enter>" "Go to trash"
 macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
 macro index,pager y "<save-message>=[Gmail]/All%20Mail<enter><enter>" "Archive"
-
-source ~/bin/dotfiles/mutt/molokai.muttrc

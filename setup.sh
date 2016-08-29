@@ -118,7 +118,9 @@ if [ $should_setup_mutt = y ]; then
         if [ ! -f $muttconfig ]; then
             touch $muttconfig
         fi
+
         append-line $muttconfig "source ~/bin/dotfiles/muttrc"
+        append-line $muttconfig "source ~/bin/dotfiles/mutt/molokai.muttrc"
 
         #setting up personal data
         progress "Enter google account: "
