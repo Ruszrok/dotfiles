@@ -20,9 +20,11 @@ set include
 set sort = "threads"
 set sort_aux = "reverse-last-date-received"
 set auto_tag = yes
+
 ignore "Authentication-Results:"
 ignore "DomainKey-Signature:"
 ignore "DKIM-Signature:"
+
 hdr_order Date From To Cc
 alternative_order text/plain text/html *
 auto_view text/html
@@ -38,3 +40,5 @@ macro index gs "<change-folder>=[Gmail]/Sent%20Mail<enter>" "Go to sent mail"
 macro index gt "<change-folder>=[Gmail]/Trash<enter>" "Go to trash"
 macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
 macro index,pager y "<save-message>=[Gmail]/All%20Mail<enter><enter>" "Archive"
+
+source ~/bin/dotfiles/mutt/molokai.muttrc
