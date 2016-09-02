@@ -24,8 +24,6 @@ set auto_tag = yes
 # Sidebar
 set sidebar_visible = yes
 set sidebar_width = 25
-set mail_check_stats
-set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
 # Move the highlight to the previous mailbox
 bind index,pager \Cp sidebar-prev
 # Move the highlight to the next mailbox
