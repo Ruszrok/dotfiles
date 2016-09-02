@@ -121,7 +121,6 @@ if [ $should_setup_mutt = y ]; then
 
         append-line $muttconfig "source ~/bin/dotfiles/muttrc"
         append-line $muttconfig "source ~/bin/dotfiles/mutt/molokai.muttrc"
-        append-line $muttconfig "set mailcap_path = ~/bin/dotfiles/mutt/mailcap"
 
         #setting up personal data
         progress "Enter google account: "
@@ -135,6 +134,12 @@ if [ $should_setup_mutt = y ]; then
         append-line $muttconfig "set smtp_pass = \"$gmail_password\""
         append-line $muttconfig "set from = \"$google_account\""
         append-line $muttconfig "set realname = \"Eugene Skurikhin\""
+
+
+        mailcap=~/.mailcap
+        touch $mailcap
+        append-line $mailcap "application/rtf; okular %s;"
+        append-line $mailcap "application/pdf; okular %s;"
 
         pass "setting up mutt"
     else
