@@ -12,6 +12,11 @@ Install all of these using your OS's package manager
 ##Setting up the environment
 Run setup.sh
 
+##Setting up neomutt
+If you happen to have neomutt instead of mutt, some usefull options will be disabled by default. Enable them by placing these two lines to ~/.mutt/muttrc
+set mail_check_stats = yes
+set mail_check_stats_interval = 60
+
 ##Setting up yandex disk (optional)
 1. Install davfs2
 
