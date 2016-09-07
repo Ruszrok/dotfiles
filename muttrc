@@ -16,7 +16,7 @@ set header_cache=~/.mutt/cache/headers
 set message_cachedir=~/.mutt/cache/bodies
 set certificate_file=~/.mutt/certificates
 set move = no
-set include
+set include = no
 set sort = "threads"
 set sort_aux = "reverse-last-date-received"
 set auto_tag = yes
