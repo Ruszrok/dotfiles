@@ -4,13 +4,13 @@ colorscheme molokai.vifm
 nmap yy :!cp %f %D<cr>
 
 " move files to the opposite pane
-nmap dd :!mv %f %D<cr>
+nmap DD :!mv %f %D<cr>
 
 " make a backup copy file in the same pane
 nmap yp :clone <cr>
 
 " delete
-nmap <delete> DD
+nmap <delete> dd
 
 " spacebar to select files
 nmap <space> t
