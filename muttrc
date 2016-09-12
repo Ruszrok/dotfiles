@@ -18,9 +18,9 @@ set certificate_file=~/.mutt/certificates
 set move = no
 set include = no
 set sort = "threads"
+set strict_threads = yes
 set sort_aux = "reverse-last-date-received"
 set auto_tag = yes
-set text_flowed = yes
 
 # Aliases
 set alias_file = ~/yandex.disk/mutt_aliases
