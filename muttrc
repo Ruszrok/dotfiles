@@ -36,6 +36,9 @@ bind index,pager \Cn sidebar-next
 # Open the highlighted mailbox
 bind index,pager \Co sidebar-open
 
+# Vim and vifm style quit
+bind index,pager ZZ quit
+
 ignore "Authentication-Results:"
 ignore "DomainKey-Signature:"
 ignore "DKIM-Signature:"
