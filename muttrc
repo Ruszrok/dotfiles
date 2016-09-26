@@ -1,6 +1,8 @@
 # the file contains only basic settings; no personal data
 # should be placed here, use ~/.mutt/muttrc file for that
-set editor = "vim"
+
+# Use vim as editor without word wrap
+set editor="vim +':set textwidth=0'"
 
 set folder = "imaps://imap.gmail.com:993"
 set spoolfile = "+INBOX"
