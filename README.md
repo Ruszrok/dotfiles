@@ -29,7 +29,7 @@ mkdir ~/yandex.disk
 3. Add mount point to bookmarks (or places or whatever) in standard file manager
 
 4. Store yandex credentials in $HOME/.davfs2/secrets like (replace <username> and <password>)
-echo "/home/$USER/yandex.disk <username> <password>
+echo "/home/$USER/yandex.disk <username> <password>" >> ~/.davfs2/secrets
 
 5. Set file permissions accordingly
 sudo chmod 0600 ~/.davfs2/secrets
@@ -49,8 +49,8 @@ chmod u+s /usr/sbin/mount.davfs
 mount ~/yandex.disk
 
 11. Add automatic mounting on starup.
-* In open suse:
-sudo crontab -e
+* In openSUSE:
+crontab -e
 
 add the following line
 @reboot mount ~/yandex.disk
@@ -60,5 +60,6 @@ add the following line
 mount /home/<username>/yandex.disk
 
 12. Don't forget to setup backup routine as files deleted from mounted drive can't be restored
-sudo crontab -e
+mkdir /home/$USER/.backup
+crontab -e
 @reboot bash /home/<username>/bin/dotfiles/backup.sh

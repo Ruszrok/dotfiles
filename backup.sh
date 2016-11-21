@@ -1,8 +1,8 @@
 # What to backup. 
-backup_files="/home/eugene/yandex.disk"
+backup_files="/home/$USER/yandex.disk"
 
 # Where to backup to.
-dest="/home/eugene/.backup"
+dest="/home/$USER/.backup"
 
 # Create archive filename.
 day=$(date +%A)
