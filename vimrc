@@ -14,6 +14,11 @@ Plugin 'elzr/vim-json'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 call vundle#end()
 filetype plugin indent on     " required!
+" Learn vim the hard way
+noremap h <NOP>
+noremap j <NOP>
+noremap k <NOP>
+noremap l <NOP>
 " Keymap
 set keymap=russian-jcukenwin
 set iminsert=0
