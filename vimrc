@@ -28,8 +28,10 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+" swap files
+set noswapfile
 " file types 
-autocmd FileType make setlocal noexpandtab "make
+autocmd FileType make setlocal noexpandtab
 " search
 set incsearch
 " ctrl+s as save
@@ -39,9 +41,7 @@ nnoremap <C-s> :w<CR>
 nnoremap <C-c> :bp\|bd #<CR>
 " buffers
 nnoremap <C-h> :bprevious<CR>
-nnoremap <C-j> :bprevious<CR>
 nnoremap <C-l> :bnext<CR>
-nnoremap <C-k> :bnext<CR>
 nnoremap <C-n> :buffers<CR>:buffer<Space>
 " Backspace fix
 set backspace=indent,eol,start
@@ -57,9 +57,6 @@ nnoremap d( T(dt)
 nnoremap d) T(dt)
 nnoremap y( T(yt)
 nnoremap y) T(yt)
-" newline without insert mode
-nnoremap <S-Enter> O<Esc>j
-nnoremap <CR> a<CR><Esc>k$
 " folding
 set foldmethod=manual
 set foldlevelstart=1
