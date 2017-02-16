@@ -11,5 +11,3 @@ alias gst="git status"
 alias ls="ls --color"
 alias la="ls -la"
 alias lt="tree"
-
-alias emacs="emacs -nw"
