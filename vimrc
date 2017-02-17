@@ -24,45 +24,60 @@ noremap h <NOP>
 noremap j <NOP>
 noremap k <NOP>
 noremap l <NOP>
+
 " Keymap
 set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=-1
+
 " Appearance
 syntax enable
 set t_Co=256
 colorscheme molokai
-set number
+
+" Line numbers
+set number 
+
 " indentation all
 set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
 " swap files
-set noswapfile
+set noswapfile 
+
 " file types 
 autocmd FileType make setlocal noexpandtab
+
 " search
 set incsearch
+
 " ctrl+s as save
 inoremap <C-s> <Esc>:w<CR>
 nnoremap <C-s> :w<CR>
+
 " remove current buffer without closing window
 nnoremap <C-c> :bp\|bd #<CR>
+
 " buffers
 nnoremap <C-h> :bprevious<CR>
 nnoremap <C-l> :bnext<CR>
 nnoremap <C-n> :buffers<CR>:buffer<Space>
+
 " Backspace fix
 set backspace=indent,eol,start
+
 " folding
 set foldmethod=manual
 set foldlevelstart=1
 let xml_syntax_folding=1
+
 " Unite
 nnoremap <leader>t :Unite -start-insert file_rec/async<CR>
 nnoremap <leader>f :Unite file<CR>
 nnoremap <leader>r :Unite file_mru<CR>
+
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
