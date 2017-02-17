@@ -4,13 +4,10 @@ set nocompatible              " be iMproved
 filetype off                  " required!
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'groenewege/vim-less'
 Plugin 'bling/vim-airline'
 Plugin 'tomasr/molokai'
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/neomru.vim'
-Plugin 'Shougo/vimproc.vim'
 Plugin 'elzr/vim-json'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 call vundle#end()
@@ -79,11 +76,6 @@ set backspace=indent,eol,start
 set foldmethod=manual
 set foldlevelstart=1
 let xml_syntax_folding=1
-
-" Unite
-nnoremap <leader>t :Unite -start-insert file_rec/async<CR>
-nnoremap <leader>f :Unite file<CR>
-nnoremap <leader>r :Unite file_mru<CR>
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
