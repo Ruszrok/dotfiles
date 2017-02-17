@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved
+
 " Vundle
 filetype off                  " required!
 set rtp+=~/.vim/bundle/Vundle.vim/
@@ -52,6 +53,12 @@ autocmd FileType make setlocal noexpandtab
 
 " search
 set incsearch
+
+" search down into subfolders 
+" provides tab-completion for all file-related tasks
+set path+=**
+" display all matching file when we tab complete
+set wildmenu
 
 " ctrl+s as save
 inoremap <C-s> <Esc>:w<CR>
