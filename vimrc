@@ -15,7 +15,9 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 call vundle#end()
 filetype plugin indent on     " required!
 
-let mapleader = ","
+let mapleader=","
+
+set clipboard=unnamed
 
 " Learn vim the hard way
 noremap h <NOP>
