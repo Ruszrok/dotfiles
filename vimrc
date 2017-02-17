@@ -50,18 +50,6 @@ nnoremap <C-l> :bnext<CR>
 nnoremap <C-n> :buffers<CR>:buffer<Space>
 " Backspace fix
 set backspace=indent,eol,start
-" quotes shortcuts
-nnoremap "" Bi"<Esc>Ea"<Esc>
-nnoremap '' Bi'<Esc>Ea'<Esc>
-nnoremap d" T"dt"
-nnoremap d' T'dt'
-nnoremap y" T"yt"
-nnoremap y' T'yt'
-" parenthesis shortcuts
-nnoremap d( T(dt)
-nnoremap d) T(dt)
-nnoremap y( T(yt)
-nnoremap y) T(yt)
 " folding
 set foldmethod=manual
 set foldlevelstart=1
