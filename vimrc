@@ -14,6 +14,9 @@ Plugin 'elzr/vim-json'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 call vundle#end()
 filetype plugin indent on     " required!
+
+let mapleader = ","
+
 " Learn vim the hard way
 noremap h <NOP>
 noremap j <NOP>
@@ -54,12 +57,6 @@ set backspace=indent,eol,start
 set foldmethod=manual
 set foldlevelstart=1
 let xml_syntax_folding=1
-" Build
-nnoremap \b :!make<CR>
-" Run
-nnoremap \r :!make run<CR>
-" Debug
-nnoremap \d :!make debug<CR>
 " Unite
 nnoremap <leader>t :Unite -start-insert file_rec/async<CR>
 nnoremap <leader>f :Unite file<CR>
