@@ -82,6 +82,9 @@ let xml_syntax_folding=1
 nnoremap <leader>k :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 
+" new line from normal mode
+nnoremap <CR> m`o<ESC><C-o>
+
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
