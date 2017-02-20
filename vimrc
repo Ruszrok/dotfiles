@@ -17,6 +17,7 @@ filetype plugin indent on     " required!
 let mapleader=","
 
 set clipboard=unnamed
+set timeoutlen=200
 
 " Learn vim the hard way
 noremap h <NOP>
@@ -84,6 +85,9 @@ let NERDTreeQuitOnOpen=1
 
 " new line from normal mode
 nnoremap <CR> m`o<ESC><C-o>
+
+" to normal mode fast
+inoremap kj <ESC>
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
