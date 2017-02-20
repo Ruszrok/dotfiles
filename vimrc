@@ -34,6 +34,8 @@ set imsearch=-1
 syntax enable
 set t_Co=256
 colorscheme molokai
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
 
 " Line numbers
 set number 
