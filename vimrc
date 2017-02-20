@@ -83,9 +83,6 @@ let xml_syntax_folding=1
 nnoremap <leader>k :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 
-" new line from normal mode
-nnoremap <CR> m`o<ESC><C-o>
-
 " to normal mode fast
 inoremap kj <ESC>
 
