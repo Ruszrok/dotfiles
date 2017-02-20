@@ -80,6 +80,7 @@ let xml_syntax_folding=1
 
 " nerd tree
 nnoremap <leader>k :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen=1
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
