@@ -53,6 +53,7 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 " search
 set incsearch
+set ignorecase
 
 " search down into subfolders 
 " provides tab-completion for all file-related tasks
