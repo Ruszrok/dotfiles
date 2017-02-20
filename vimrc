@@ -48,6 +48,7 @@ set noswapfile
 
 " file types 
 autocmd FileType make setlocal noexpandtab
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 " search
 set incsearch
