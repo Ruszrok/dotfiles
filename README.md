@@ -54,7 +54,7 @@ mount ~/yandex.disk
 crontab -e
 
 add the following line
-@reboot mount ~/yandex.disk
+@reboot mount /home/<username>/yandex.disk
 
 
 * In linux mint, ubuntu add the command to startup apps via GUI
