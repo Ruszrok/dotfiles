@@ -17,6 +17,7 @@ filetype plugin indent on     " required!
 let mapleader=","
 
 set clipboard=unnamed
+set clipboard=unnamedplus
 set timeoutlen=200
 
 " Learn vim the hard way
