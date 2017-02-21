@@ -3,6 +3,9 @@ backup_files="/home/$USER/yandex.disk"
 
 # Where to backup to.
 dest="/home/$USER/.backup"
+if [ ! -d $dest ]; then
+    mkdir $dest
+fi
 
 # Create archive filename.
 day=$(date +%A)
