@@ -1,54 +1,13 @@
-FAIL='\033[0;31m'
-PASS='\033[0;32m'
-NC='\033[0m' # No Color
-
-
-function pass {
-    echo -en "\033[2K"
-    echo -e "\r${NC}[${PASS}done${NC}] $1"
-}
-
-
-function fail {
-    echo -en "\033[2K"
-    echo -e "\r${NC}[${FAIL}fail${NC}] $1"
-}
-
-
-function header {
-    echo -n "${NC}[...] $1"
-}
-
-
-function progress {
-    echo -en "\033[2K"
-    echo -en "\r[...] $1"
-}
-
-
-# appends line of text to file (if it's not already there)
-# if file not found, creates it
-function append-line {
-    if [ ! -f $1 ]; then
-        progress "$1 not found"
-        touch $1
-    fi
-
-    line=$(grep "$2" $1)
-    if [ $? -eq 0 ]; then
-        progress "$2 already appended"
-    else
-        echo $2 >> $1
-    fi
-}
+#!/bin/bash
+source ./setup-utility.sh
 
 progress "source vimrc"
-append-line ~/.vimrc ":so ~/bin/dotfiles/vimrc"
+appendLine ~/.vimrc ":so ~/bin/dotfiles/vimrc"
 pass "source vimrc"
 
 
 progress "source bashrc"
-append-line ~/.bashrc ". ~/bin/dotfiles/bashrc"
+appendLine ~/.bashrc ". ~/bin/dotfiles/bashrc"
 pass "source bashrc"
 
 
@@ -68,7 +27,7 @@ if [ ! -d ~/.vifm ]; then
     progress "creating ~/.vifm"
     mkdir ~/.vifm
 fi
-append-line ~/.vifm/vifmrc ":so ~/bin/dotfiles/vifmrc"
+appendLine ~/.vifm/vifmrc ":so ~/bin/dotfiles/vifmrc"
 progress "color scheme molokai"
 if [ ! -d ~/.vifm/colors ]; then
     progress "creating ~/.vifm/colors"
@@ -119,27 +78,27 @@ if [ $should_setup_mutt = y ]; then
             touch $muttconfig
         fi
 
-        append-line $muttconfig "source ~/bin/dotfiles/muttrc"
-        append-line $muttconfig "source ~/bin/dotfiles/mutt/molokai.muttrc"
+        appendLine $muttconfig "source ~/bin/dotfiles/muttrc"
+        appendLine $muttconfig "source ~/bin/dotfiles/mutt/molokai.muttrc"
 
         #setting up personal data
         progress "Enter google account: "
         read google_account                         #e.g. google@gmail.com
         google_account_name=${google_account%@*}    #e.g. google
-        append-line $muttconfig "set imap_user = \"$google_account\""
+        appendLine $muttconfig "set imap_user = \"$google_account\""
         progress "Enter gmail password (don't confuse with google password!): "
         read gmail_password
-        append-line $muttconfig "set imap_pass = \"$gmail_password\""
-        append-line $muttconfig "set smtp_url = \"smtp://$google_account_name@smtp.gmail.com:587/\""
-        append-line $muttconfig "set smtp_pass = \"$gmail_password\""
-        append-line $muttconfig "set from = \"$google_account\""
-        append-line $muttconfig "set realname = \"Eugene Skurikhin\""
+        appendLine $muttconfig "set imap_pass = \"$gmail_password\""
+        appendLine $muttconfig "set smtp_url = \"smtp://$google_account_name@smtp.gmail.com:587/\""
+        appendLine $muttconfig "set smtp_pass = \"$gmail_password\""
+        appendLine $muttconfig "set from = \"$google_account\""
+        appendLine $muttconfig "set realname = \"Eugene Skurikhin\""
 
 
         mailcap=~/.mailcap
         touch $mailcap
-        append-line $mailcap "application/rtf; okular %s;"
-        append-line $mailcap "application/pdf; okular %s;"
+        appendLine $mailcap "application/rtf; okular %s;"
+        appendLine $mailcap "application/pdf; okular %s;"
 
         pass "setting up mutt"
     else

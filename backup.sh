@@ -1,3 +1,4 @@
+#!/bin/bash
 # What to backup. 
 backup_files="/home/$USER/yandex.disk"
 
