@@ -21,6 +21,7 @@ else
 fi
 pass "setting up vundle"
 
+source ./setup-fonts.sh
 
 progress "setting up vifm"
 if [ ! -d ~/.vifm ]; then
