@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'groenewege/vim-less'
 Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
 Plugin 'tomasr/molokai'
 Plugin 'elzr/vim-json'
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -92,9 +93,8 @@ inoremap kj <ESC>
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
+let g:airline_powerline_fonts = 1
 let g:airline_detect_modified = 0
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
 set laststatus=2
 
 " Functions
