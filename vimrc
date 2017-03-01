@@ -17,8 +17,6 @@ filetype plugin indent on     " required!
 
 let mapleader=","
 
-set timeoutlen=200
-
 " Learn vim the hard way
 noremap h <NOP>
 "noremap j <NOP>
@@ -84,9 +82,6 @@ let xml_syntax_folding=1
 " nerd tree
 nnoremap <leader>k :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
-
-" to normal mode fast
-inoremap kj <ESC>
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
