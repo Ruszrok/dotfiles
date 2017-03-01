@@ -1,9 +1,13 @@
 [user]
-    name=EugeneSqr
+    name=eugenesqr
+
 [core]
     editor=vim
+    autocrlf = input
+
 [diff]
     tool=vimdiff
+
 [color]
     ui=true
 
