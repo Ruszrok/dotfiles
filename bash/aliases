@@ -6,7 +6,7 @@ alias dot="cd $dot"
 alias site="cd $site"
 alias acc="cd $acc"
 
-alias gst="git status"
+alias gst="git status --short"
 
 alias ls="ls --color"
 alias la="ls -la"
