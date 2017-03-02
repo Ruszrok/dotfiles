@@ -2,7 +2,7 @@
 source ./setup-utility.sh
 
 progress "source vimrc"
-appendLine ~/.vimrc ":so ~/bin/dotfiles/vimrc"
+appendLine ~/.vim/vimrc ":so ~/bin/dotfiles/vim/vimrc"
 pass "source vimrc"
 
 
