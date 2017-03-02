@@ -23,23 +23,6 @@ pass "setting up vundle"
 
 source ./setup-fonts.sh
 
-progress "setting up vifm"
-if [ ! -d ~/.vifm ]; then
-    progress "creating ~/.vifm"
-    mkdir ~/.vifm
-fi
-appendLine ~/.vifm/vifmrc ":so ~/bin/dotfiles/vifmrc"
-progress "color scheme molokai"
-if [ ! -d ~/.vifm/colors ]; then
-    progress "creating ~/.vifm/colors"
-    mkdir ~/.vifm/colors
-fi
-if [ -f ~/.vifm/colors/molokai.vifm ]; then
-    rm ~/.vifm/colors/molokai.vifm
-fi
-ln -s ~/bin/dotfiles/vifm/colors/molokai.vifm ~/.vifm/colors/molokai.vifm
-pass "setting up vifm"
-
 
 progress "want to setup git (y/n)? "
 read should_setup_git
@@ -62,6 +45,7 @@ if [ $should_setup_git = y ]; then
 else
     pass "setting up git (skipped)"
 fi
+
 
 progress "want to setup mutt with gmail (y/n)? "
 read should_setup_mutt
