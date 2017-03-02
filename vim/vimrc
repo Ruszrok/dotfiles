@@ -30,7 +30,6 @@ set imsearch=-1
 
 " Appearance
 syntax enable
-set t_Co=256
 colorscheme molokai
 
 " Line numbers
