@@ -63,7 +63,7 @@ if [ $should_setup_mutt = y ]; then
             touch $muttconfig
         fi
 
-        appendLine $muttconfig "source ~/bin/dotfiles/muttrc"
+        appendLine $muttconfig "source ~/bin/dotfiles/mutt/muttrc"
         appendLine $muttconfig "source ~/bin/dotfiles/mutt/molokai.muttrc"
 
         #setting up personal data
