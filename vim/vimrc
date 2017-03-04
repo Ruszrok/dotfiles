@@ -78,6 +78,9 @@ set foldmethod=manual
 set foldlevelstart=1
 let xml_syntax_folding=1
 
+" marks
+nnoremap <leader>m :marks<CR>
+
 " nerd tree
 nnoremap <leader>k :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
