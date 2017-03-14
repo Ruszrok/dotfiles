@@ -4,6 +4,8 @@ fi
 
 set -o vi
 
+EDITOR=vim
+
 stty -ixon -ixoff
 
 Red="\[\033[1;31m\]"
