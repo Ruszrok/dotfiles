@@ -18,12 +18,6 @@ filetype plugin indent on     " required!
 
 let mapleader=","
 
-" Learn vim the hard way
-noremap h <NOP>
-"noremap j <NOP>
-"noremap k <NOP>
-noremap l <NOP>
-
 " Keymap
 set keymap=russian-jcukenwin
 set iminsert=0
