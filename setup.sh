@@ -5,6 +5,10 @@ progress "source vimrc"
 appendLine ~/.vim/vimrc ":so ~/bin/dotfiles/vim/vimrc"
 pass "source vimrc"
 
+progress "setup vim Russian spell check"
+wget http://ftp.vim.org/vim/runtime/spell/ru.utf-8.{spl,sug} -NP ~/.vim/spell
+pass "setup vim Russian spell check"
+
 
 progress "source bashrc"
 appendLine ~/.bashrc ". ~/bin/dotfiles/bash/bashrc"
