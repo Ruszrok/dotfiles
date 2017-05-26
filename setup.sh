@@ -9,6 +9,18 @@ progress "setup vim Russian spell check"
 wget http://ftp.vim.org/vim/runtime/spell/ru.utf-8.{spl,sug} -NP ~/.vim/spell
 pass "setup vim Russian spell check"
 
+progress "setup vim personal dictionary for Russian"
+if [ ! -f ~/.vim/spell/ru.utf-8.add ]; then
+    ln -s ~/bin/dotfiles/vim/spell/ru.utf-8.add ~/.vim/spell/ru.utf-8.add
+fi
+pass "setup vim personal dictionary for Russian"
+
+progress "setup vim personal dictionary for English"
+if [ ! -f ~/.vim/spell/en.utf-8.add ]; then
+    ln -s ~/bin/dotfiles/vim/spell/en.utf-8.add ~/.vim/spell/en.utf-8.add
+fi
+pass "setup vim personal dictionary for English"
+
 
 progress "source bashrc"
 appendLine ~/.bashrc ". ~/bin/dotfiles/bash/bashrc"

@@ -54,7 +54,8 @@ set path+=**
 set wildmenu
 
 " spellcheck (make sure Russian dictionary is set up)
-nnoremap <F5> :setlocal spell! spelllang=en_us,ru_ru<CR>
+nnoremap <F5> :setlocal spell! spelllang=en_us<CR>
+nnoremap <F6> :setlocal spell! spelllang=ru_ru<CR>
 
 " ctrl+s as save
 inoremap <C-s> <Esc>:w<CR>
