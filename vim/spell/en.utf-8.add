@@ -4,5 +4,10 @@ metadata
 DOM/=
 CSS/=
 SEO/=
+GUID/=
+JSON/=
 jQuery
 heroku
+localizable
+preprocess
+subfolder
